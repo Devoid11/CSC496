@@ -9,16 +9,16 @@ module.exports = {
 
       resolve: "gatsby-source-filesystem",
       options: {
-        name: `blog`,
-        path: `${__dirname}/src/pages/blog.js`,
+        name: `oldblog`,
+        path: `${__dirname}/src/pages/oldblog.js`,
       }
     },
 
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blog`,
-        path: `${__dirname}/src/pages/blog.js`,
+        name: `oldblog`,
+        path: `${__dirname}/src/pages/oldblog.js`,
         ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
@@ -32,18 +32,14 @@ module.exports = {
         useACF: false
       }
     },
-
-    /*
+    
      {
-      resolve: `gatsby-source-wordpress`,
+      resolve: `gatsby-plugin-s3`,
       options: {
-        baseUrl: `wpexample.com`,
-        protocol: `https`,
-        hostingWPCOM: false,
-        useACF: false
-      }
+      bucketName: "my-website-bucket",
     },
-*/
+  },
+
 
 
   ],

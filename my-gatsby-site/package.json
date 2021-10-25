@@ -11,16 +11,30 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby-plugin-s3 deploy -y"
+
   },
   "dependencies": {
     "gatsby": "^3.13.1",
     "gatsby-plugin-image": "^1.14.0",
+    "gatsby-plugin-s3": "^0.3.8",
     "gatsby-plugin-sharp": "^3.14.1",
     "gatsby-source-filesystem": "^3.14.0",
     "gatsby-source-wordpress": "^5.14.1",
     "gatsby-transformer-sharp": "^3.14.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
-  }
+  },
+
+  "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": "s3:*",
+        "Resource": "*"
+      }
+  ]
 }
+
+  
