@@ -26,22 +26,31 @@ const Layout = ({ pageTitle, children }) => {
       <header className={siteTitle}>{data.site.siteMetadata.title}</header>
       <nav>
         <ul className={navLinks}>
+          
           <li className={navLinkItem}>
             <Link to="/" className={navLinkText}>
               Home
             </Link>
           </li>
+
           <li className={navLinkItem}>
             <Link to="/about" className={navLinkText}>
               About
             </Link>
           </li>
-          <li className={navLinkText}>
+
+          <li className={navLinkItem}>
             <Link to="/oldblog" className={navLinkText}>
             Blog
             </Link>
           </li>
           
+          <li className={navLinkItem}>
+            <Link to="/pokemon" className={navLinkText}>
+            Pokemon
+            </Link>
+          </li>
+
         </ul>
       </nav>
       <main>
