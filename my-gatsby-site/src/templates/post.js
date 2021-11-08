@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 class Post extends Component {
   render() {
-    const post = this.props.data.wP
+    const post = this.props.data.wpPost
     return (
       <>
         <h1>{post.title}</h1>
@@ -11,21 +11,22 @@ class Post extends Component {
       </>
     )
   }
+  
 }
 Post.propTypes = {
   data: PropTypes.object.isRequired,
   edges: PropTypes.array,
 }
+
+  
 export default Post
 export const pageQuery = graphql`
 query ($id: String!) {
-  allWpPost(filter: {id: {eq: $id}}) {
-    edges {
-      node {
-        content
-      }
-    }
+  wpPost(id: {eq: $id}) {
+    title
+    content
   }
 }
+
 
 `

@@ -1,9 +1,6 @@
 import React from "react"
-import Layout from '../components/layout'
-
 export default function AllPokemon({ pageContext: { allPokemon } }) {
   return (
-    <Layout pageTitle = "Home">
     <div>
       <ul>
         {allPokemon.map(pokemon => (
@@ -13,7 +10,6 @@ export default function AllPokemon({ pageContext: { allPokemon } }) {
           </li>
         ))}
       </ul>
-      </div>
-      </Layout>
+    </div>
   )
 }

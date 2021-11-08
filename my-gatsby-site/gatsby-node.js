@@ -1,4 +1,4 @@
-/*const path = require(`path`)
+const path = require(`path`)
 const { slash } = require(`gatsby-core-utils`)
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -16,7 +16,7 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
 
   const postTemplate = path.resolve(`./src/templates/post.js`)
-  result.data.allWP.edges.forEach(edge => {
+  result.data.allWpPost.edges.forEach(edge => {
     createPage({
       path: edge.node.slug,
       component: slash(postTemplate),
@@ -25,7 +25,7 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
-}*/
+}
 
 const axios = require("axios")
 const get = endpoint => axios.get(`https://pokeapi.co/api/v2${endpoint}`)
