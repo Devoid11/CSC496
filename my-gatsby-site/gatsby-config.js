@@ -5,6 +5,16 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-styled-components",
+    
+
+    {
+      resolve: `gatsby-source-pokeapi`,
+      options: {
+        nbOfPokemons: 251,
+      },
+    },
+
     {
 
       resolve: "gatsby-source-filesystem",
@@ -37,7 +47,9 @@ module.exports = {
       resolve: `gatsby-plugin-s3`,
       options: {
       bucketName: "my-website-bucket",
-    },
+       },
+      
+      
   },
 
 
