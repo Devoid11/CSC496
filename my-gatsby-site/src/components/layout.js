@@ -16,6 +16,8 @@ import {
 //Transconimports
 import { css } from '@emotion/core';
 import { TransitionContext } from './layout';
+import { useContext } from 'react';
+import { useEffect, useState } from "react";
 
 
 

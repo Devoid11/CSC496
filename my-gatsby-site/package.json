@@ -15,12 +15,15 @@
     "deploy": "gatsby-plugin-s3 deploy -y"
   },
   "dependencies": {
+    "react": "^16.13.1",
+    "acorn": "^8",
+    "babel-eslint": "^10.0.0",
     "@emotion/react": "^11.6.0",
     "@emotion/styled": "^11.6.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "babel-plugin-styled-components": "^1.13.3",
-    "gatsby": "^3.13.1",
+    "gatsby": "^4.0.0",
     "gatsby-plugin-image": "^1.14.0",
     "gatsby-plugin-mdx": "^3.0.0",
     "gatsby-plugin-s3": "^0.3.8",
@@ -30,9 +33,9 @@
     "gatsby-source-pokeapi": "^0.1.0",
     "gatsby-source-wordpress": "^5.14.1",
     "gatsby-transformer-sharp": "^3.14.0",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
-    "styled-components": "^5.3.3"
+    "react-dom": "^16.9.0",
+    "styled-components": "^5.3.3",
+    "transcript":"^2.7"
   },
   "Version": "2012-10-17",
   "Statement": [
