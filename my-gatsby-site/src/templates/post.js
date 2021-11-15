@@ -1,3 +1,4 @@
+/*
 import React, { Component } from "react"
 import { graphql } from "gatsby"
 import PropTypes from "prop-types"
@@ -30,3 +31,4 @@ query ($id: String!) {
 
 
 `
+*/

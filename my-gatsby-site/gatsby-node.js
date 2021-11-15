@@ -1,4 +1,4 @@
-const path = require(`path`)
+/*const path = require(`path`)
 const { slash } = require(`gatsby-core-utils`)
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -26,6 +26,8 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 }
+*/
+//*
 
 const axios = require("axios")
 const get = endpoint => axios.get(`https://pokeapi.co/api/v2${endpoint}`)
@@ -44,3 +46,4 @@ exports.createPages = async ({ actions: { createPage } }) => {
     context: { allPokemon },
   })
 }
+//*/
